@@ -2,10 +2,10 @@ extends ../base
 block title
     | match2one
 block main
-    .container
-        h1 Custom Succes Story
-        section(class='LeadingMedia')
-            img(class='backgroundImage' src=require("./img/circle.png") alt='')
+
+        h1(class='container') Custom Succes Story
+        section
+         .container(class='LeadingMedia')
             .img
                 img(class='humans' src=require("./img/humans.png") alt='')
             .content
@@ -25,8 +25,8 @@ block main
                         p(class='percentParagraph') Increase in click-throungh rate
                 a( href='#' class='buttonRose') Read Full Story
 
-        section(class='ShoppingMall')
-            img(class='backgroundImage' src=require("./img/circle.png") alt='')
+        section(class='backImage')
+          .container(class='ShoppingMall')
             .content
                 .top
                     h2 A few
@@ -39,7 +39,8 @@ block main
             .img
                 img(class='humans' src=require("./img/car.png") alt='')
 
-        section(class='LeadingMedia')
+        section
+          .container(class='LeadingMedia')
             .img
                 img(class='humans' src=require("./img/store.png") alt='')
             .content

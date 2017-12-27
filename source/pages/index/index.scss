@@ -1,5 +1,20 @@
 @import "../../styles/app";
 
+body {
+  background-image: url("img/circle.png");
+  background-repeat: no-repeat;
+  background-position:  110% -15%;
+  overflow-x: hidden;
+
+}
+
+.backImage {
+  height: 600px;
+  background-image: url("img/circle.png");
+  background-repeat: no-repeat;
+  background-position:  130% 0;
+}
+
 h1{
   color: $black;
   font-family: $font-family-base;

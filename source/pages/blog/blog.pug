@@ -2,4 +2,93 @@ extends ../base
 block title
     | Blog page
 block main
-    h1 page blog-pug
+    .container
+        h1(class='containerLeft') 404 - Leading media agency, Croatia
+    section
+        .container(class='story')
+            .containerLeft
+              .content
+                span Story
+                p(class='paragraph')  404 agency is the leading digital performance marketing agency in Croatia. Working mainly with e-commerce clients, their focus in display advertising is to maximise their measurable performance and ROI. 
+              img(class='logo' src=require("./img/404_logo.png") alt='')
+    section
+     .container(class='story')
+         .containerLeft
+           span Client
+           p(class='paragraph')  Shoebedo is the leading shoe online retailer in Croatia. Focusing on sneakers with a target audience of people between 16-35, both male and female.
+           p(class='paragraph')  Shoebedo have been running display campaigns for a long time with the biggest DSPs in programmatic, with the focus goals of increase transactions and revenue. Tracking main performance KPIs such as CPA (Cost-per-Acquisition) and CPC (Cost-per-Click).  The campaign is Prospecting only, and focused on promoting Shoebedo’s winter collection of water-proof shoes.
+           p(class='paragraph')  Quick learning period, CPA improved greatly after just a few days:
+           img(class='graphic' src=require("./img/graphic.png") alt='')
+    section(class='table')
+      .container
+          .containerLeft
+            .info
+                h2 Campaign settings
+                table(class='settings')
+                    tr
+                        td Budget:
+                        td(class='td') $2,476
+                    tr
+                        td Daily budget:
+                        td(class='td') $137
+                    tr
+                        td Geo:
+                        td(class='td') Croatia
+                    tr
+                        td Campaign period:
+                        td(class='td') Nov 10 - Dec 10
+                    tr
+                        td Category targeting:
+                        td(class='td') Open
+                    tr
+                        td Devices:
+                        td(class='td') Deskop, Mobile
+                    tr
+                        td CPA goal:
+                        td(class='td') 170$
+                h2 Campaign results
+                table(class='results')
+                    tr
+                        th CPA
+                        th CPM
+                        th CPC
+                        th CTR
+                    tr
+                        td $4.75
+                        td $0.55
+                        td $0.53
+                        td $0.10
+                    tr(class='percent')
+                        td 76%
+                        td 432%
+                        td 39%
+                        td 76%
+                    tr(class='description')
+                        td Coast Decrease
+                        td Coast Decrease
+                        td Coast Decrease
+                        td Increase
+                p(class='paragraph') CPA: Cost per acquisition, CPM: Cost per 1000 impressions, CPC: Cost per click, CTR: Click-through rate
+    section(class='Challenge')
+        .container
+            .containerLeft
+                h2 Challenge
+                p(class='paragraph') We have been testing with many of the largest ad-tech vendors and DSPs, but have been struggling with lack of transparency in reporting and very complex processes to launch campaigns. 
+                p(class='paragraph') With Match2One it was instantly much easier to get started, and we have full control and reporting transparency. The tool is self-service which means we have full control to test anything at anytime. It’s also adapted for agencies, where we can assign campaign manager logins to specific clients, and get an eagle-eye overview of all campaigns and clients. 
+                p(class='paragraph') 404 agency has seen Increase in general sales: Increase in transactions with 175%, and increase in revenue with 145%. 
+
+    section(class='infoPerson')
+        .container
+            .containerLeft
+                p(class='paragraph') “It’s extremely easy to run campaigns, and less time-consuming than other solutions. You can set up and launch a new campaign in a few minutes, that would take hours with another platform. The reporting and analytics is very transparent, and easy to pass on to clients” 
+                p(class='paragraph') “It’s amazing that you can now run your own programmatic advertising campaigns without previous experience, in a self-service tool that is easy to use. Never seen anything like it. Saves us a lot of time, and the performance is higher than anything we tried before. We are now moving more of our clients on to Match2One’s platform.” 
+            .containerRight
+                img(class='person' src=require("./img/person.png") alt='')
+                .info
+                    span(class='paragraph') Iva Obrovac
+                    span(class='paragraph') Senior Performance
+                    span(class='paragraph') Marketing Specialist
+                    span(class='paragraph') 404 Agency
+
+
+
