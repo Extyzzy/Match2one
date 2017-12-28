@@ -2,8 +2,9 @@
 body {
   background-image: url("img/circle.png");
   background-repeat: no-repeat;
-  background-position:  110% -50%;
+  background-position:  120% -30%;
   overflow-x: hidden;
+  margin: 0;
 }
 
 .containerLeft {
@@ -91,6 +92,7 @@ h1 {
 .infoPerson {
   background-image: url("img/roseImage.png");
   background-repeat: no-repeat;
+  background-size: 100% 100%;
   padding: 30px 0;
 
   .container {
@@ -116,4 +118,74 @@ h1 {
   }
 }
 
+.slider {
+  margin: 50px 0;
+  text-align: center;
+  padding: 50px 0;
+  position: relative;
+  height: 300px;
 
+  .title {
+      color: $black;
+      font-size: 32px;
+      font-weight: 580;
+  }
+
+  .sliderContent {
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 30px;
+
+    .container {
+      width: 300px;
+      padding-left: 30px;
+      padding-right: 30px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+  }
+
+
+  .arrows {
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: -120px;
+    position: relative;
+  }
+
+  .prev::after {
+    font-family: $font-family;
+    content: 'b';
+    color: $rose;
+    display: block;
+    font-size: 26px;
+    cursor: pointer;
+    opacity: 0.4;
+  }
+
+  .prev:active::after {
+    margin-left: -3px;
+    opacity: 1;
+  }
+
+  .next::after {
+    font-family: $font-family;
+    content: 'e';
+    color: $rose;
+    display: block;
+    font-size: 26px;
+    cursor: pointer;
+    opacity: 0.4;
+  }
+
+  .next:active::after {
+    margin-right: -3px;
+    opacity: 1;
+  }
+}

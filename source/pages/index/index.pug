@@ -2,7 +2,6 @@ extends ../base
 block title
     | match2one
 block main
-
         h1(class='container') Custom Succes Story
         section
          .container(class='LeadingMedia')
@@ -41,8 +40,7 @@ block main
 
         section
           .container(class='LeadingMedia')
-            .img
-                img(class='humans' src=require("./img/store.png") alt='')
+            .img(style='background-image: url("img/store.png")')
             .content
                 .top
                     img(class='logo' src=require("./img/logosport.png") alt='')
