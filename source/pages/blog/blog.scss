@@ -1,10 +1,9 @@
 @import "../../styles/app";
-body {
+
+.backImage {
   background-image: url("img/circle.png");
   background-repeat: no-repeat;
-  background-position:  120% -30%;
-  overflow-x: hidden;
-  margin: 0;
+  background-position:  80% 0;
 }
 
 .containerLeft {
@@ -90,7 +89,6 @@ h1 {
 }
 
 .infoPerson {
-  background-image: url("img/roseImage.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   padding: 30px 0;
@@ -124,6 +122,8 @@ h1 {
   padding: 50px 0;
   position: relative;
   height: 300px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 
   .title {
       color: $black;
@@ -140,12 +140,42 @@ h1 {
       width: 300px;
       padding-left: 30px;
       padding-right: 30px;
+      position: relative;
+      height: 200px;
+      cursor: pointer;
 
-        img {
+      .content {
+        position: absolute;
+        color: $white;
+        height: 200px;
+        width: 208px;
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        transition: all 0.5s ease;
+
+        span {
+          font-weight: 700;
+          font-size: 28px;
+          margin-top: 60px;
+          display: block;
+        }
+         p {
+           color: $white;
+           font-size: 16px;
+           font-weight: 500;
+         }
+      }
+
+      .content:hover {
+        opacity: 1;
+      }
+
+      img {
           width: 100%;
           height: 100%;
           object-fit: cover;
         }
+
       }
   }
 
@@ -164,7 +194,7 @@ h1 {
     content: 'b';
     color: $rose;
     display: block;
-    font-size: 26px;
+    font-size: 35px;
     cursor: pointer;
     opacity: 0.4;
   }
@@ -179,7 +209,7 @@ h1 {
     content: 'e';
     color: $rose;
     display: block;
-    font-size: 26px;
+    font-size: 35px;
     cursor: pointer;
     opacity: 0.4;
   }
@@ -189,3 +219,64 @@ h1 {
     opacity: 1;
   }
 }
+
+.slick-dots li button:before {
+  color: #eebbd2;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: #fd5680;
+}
+
+.slick-dots {
+  bottom: -40px;
+}
+.slick-dots li button:before {
+  font-size: 9px;
+}
+
+@media screen and (max-width: 1130px) {
+
+  .infoPerson .container .containerRight .info {
+    margin-top: 10px;
+  }
+
+  .infoPerson .container .containerRight .info span {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .slider .arrows {
+    width: 100%;
+  }
+
+  .containerLeft {
+    width: 100%;
+  }
+
+  .story .logo {
+    position: static;
+  }
+}
+
+@media screen and (max-width: $screen-sm-min) {
+ .slider .sliderContent {
+    width: 100%;
+    padding: 0 30px;
+ }
+
+  .infoPerson .container {
+    flex-wrap: wrap;
+  }
+
+  .infoPerson .container .containerRight .info {
+    margin-top: 0;
+  }
+
+  .infoPerson .container .containerRight .info span {
+    margin-left: 10px;
+  }
+}
+

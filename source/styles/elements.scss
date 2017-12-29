@@ -1,5 +1,6 @@
 body {
   font-family: $font-family-base;
+  margin: 0;
 }
 
 .buttonRose {
@@ -64,4 +65,11 @@ body {
 .container {
   width: $screen-lg-min;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
 }

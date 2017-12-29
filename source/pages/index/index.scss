@@ -4,7 +4,6 @@ body {
   background-image: url("img/circle.png");
   background-repeat: no-repeat;
   background-position:  110% -15%;
-  overflow-x: hidden;
   margin: 0;
 }
 
@@ -58,7 +57,7 @@ h1{
         height: 100px;
 
         p {
-          line-height: 70px;
+          margin-top: 40px;
           margin-left: 50px;
           font-size: 18px;
         }
@@ -133,6 +132,40 @@ h1{
       display: flex;
     }
 
+  }
+}
+
+@media screen and (max-width: $screen-lg-min) {
+  .LeadingMedia {
+    padding: 50px 15px 100px 15px;
+    .img {
+      padding: 0 15px;
+      width: 100%;
+      height: auto;
+    }
+    .content {
+      width: 60%;
+      .bottom {
+        flex-wrap: wrap;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $screen-sm-min) {
+
+  .LeadingMedia {
+    flex-wrap: wrap;
+    padding: 50px 0 100px  0;
+    .img {
+      margin: 0 auto;
+    }
+     .content {
+       margin-left: 0;
+       margin-top: 30px;
+       width: 100%;
+       padding: 0 15px;
+     }
   }
 }
 

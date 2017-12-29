@@ -3,7 +3,7 @@ import 'normalize.css';
 
 $(document).ready(function(){
     $('.sliderContent').slick({
-        autoplay:true,
+        autoplay: false,
         dots: true,
         infinite: true,
         speed: 300,
@@ -23,17 +23,17 @@ $(document).ready(function(){
                 }
             },
             {
-                breakpoint: 600,
+                breakpoint: 800,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 2
                 }
             },
             {
-                breakpoint: 480,
+                breakpoint: 700,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1
+                    slidesToScroll: 1,
                 }
             }
         ]
