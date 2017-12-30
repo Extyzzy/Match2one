@@ -3,7 +3,7 @@ import 'normalize.css';
 
 $(document).ready(function(){
     $('.sliderContent').slick({
-        autoplay: false,
+        autoplay: true,
         dots: true,
         infinite: true,
         speed: 300,
