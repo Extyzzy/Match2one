@@ -163,6 +163,9 @@ h1{
 }
 
 @media screen and (max-width: $screen-sm-min) {
+  p {
+    padding: 0 !important;
+  }
   .ShoppingMall {
     flex-wrap: wrap-reverse;
     .img {
@@ -173,10 +176,6 @@ h1{
     .content {
       width: 100%;
       padding: 0 15px;
-
-      p {
-        padding: 0;
-      }
     }
   }
   .LeadingMedia {
