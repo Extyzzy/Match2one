@@ -23,52 +23,54 @@ block main
       .container
           .containerLeft
             .info
-                h2 Campaign settings
+                h2 Campaign settings <i class="fa fa-sliders" aria-hidden="true"></i>
                 table(class='settings')
                     tr
-                        td Budget:
+                        td <i class="fa fa-usd" aria-hidden="true"></i> Budget:
                         td(class='td') $2,476
                     tr
-                        td Daily budget:
+                        td <i class="fa fa-calendar-plus-o" aria-hidden="true"></i> Daily budget:
                         td(class='td') $137
                     tr
-                        td Geo:
+                        td <i class="fa fa-globe" aria-hidden="true"></i> Geo:
                         td(class='td') Croatia
                     tr
-                        td Campaign period:
+                        td <i class="fa fa-calendar" aria-hidden="true"></i> Campaign period:
                         td(class='td') Nov 10 - Dec 10
                     tr
                         td Category targeting:
                         td(class='td') Open
                     tr
-                        td Devices:
+                        td <i class="fa fa-desktop" aria-hidden="true"></i> Devices:
                         td(class='td') Deskop, Mobile
                     tr
-                        td CPA goal:
+                        td <i class="goal" aria-hidden="true"></i> CPA goal:
                         td(class='td') 170$
-                h2 Campaign results
-                table(class='results')
-                    tr
-                        th CPA
-                        th CPM
-                        th CPC
-                        th CTR
-                    tr
-                        td $4.75
-                        td $0.55
-                        td $0.53
-                        td $0.10
-                    tr(class='percent')
-                        td 76%
-                        td 432%
-                        td 39%
-                        td 76%
-                    tr(class='description')
-                        td Coast Decrease
-                        td Coast Decrease
-                        td Coast Decrease
-                        td Increase
-                p(class='paragraph') CPA: Cost per acquisition, CPM: Cost per 1000 impressions, CPC: Cost per click, CTR: Click-through rate
+                h2 Campaign results <i class="fa fa-trophy" aria-hidden="true"></i>
+                .results
+                    .campaign
+                        span CPA
+                        span(class='money')  $4.75
+                        span(class='percent') 76%
+                        p(class='description') Coast Decrease
+                    .campaign
+                        span CPM
+                        span(class='money')  $0.55
+                        span(class='percent') 432%
+                        p(class='description') Coast Decrease
+                    .campaign
+                        span CPC
+                        span(class='money')  $0.53
+                        span(class='percent') 39%
+                        p(class='description') Coast Decrease
+                    .campaign
+                        span CTR
+                        span(class='money')  $0.10
+                        span(class='percent') 76%
+                        p(class='description') Increase
+
+
+                p(class='paragraph cpa') CPA: Cost per acquisition, CPM: Cost per 1000 impressions, CPC: Cost per click, CTR: Click-through rate
     section(class='Challenge')
         .container
             .containerLeft
@@ -95,40 +97,34 @@ block main
 
         .sliderContent
             .container
-                .content
-                    span 404
-                    p(class='paragraph') Media agency
                 img(src=require("./img/person.png"))
+                .middle
+                    .text
+                        span 404
+                        p(class='paragraph') Media agency
+                p(class='paragraph description') “It’s extremely easy to run campaigns, and less
             .container
-                .content
-                    span Moto Direct
-                    p(class='paragraph') Ecommerce motocycle retail
                 img(src=require("./img/humans.png"))
+                .middle
+                    .text
+                        span 404
+                        p(class='paragraph') Ecommerce motocycle retail
+                p(class='paragraph description') “It’s extremely easy to run campaigns, and less
             .container
-                .content
-                    span A few
-                    p(class='paragraph') Shopping agency
                 img(src=require("./img/car.png"))
+                .middle
+                    .text
+                        span 404
+                        p(class='paragraph') Media agency
+                p(class='paragraph description') “It’s extremely easy to run campaigns, and less
             .container
-                .content
-                    span 404
-                    p(class='paragraph') Media agency
-                img(src=require("./img/car.png"))
-            .container
-                .content
-                    span 404
-                    p(class='paragraph') Media agency
-                img(src=require("./img/car.png"))
-            .container
-                .content
-                    span 404
-                    p(class='paragraph') Media agency
-                img(src=require("./img/car.png"))
-            .container
-                .content
-                    span 404
-                    p(class='paragraph') Media agency
-                img(src=require("./img/car.png"))
+                img(src=require("./img/car.png") style="width:100%")
+                .middle
+                    .text
+                        span 404
+                        p(class='paragraph') Media agency
+                p(class='paragraph description') “It’s extremely easy to run campaigns, and less
+
         .arrows
             .prev
             .next

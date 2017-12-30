@@ -38,7 +38,7 @@ h1 {
 .table {
   background-image: url("img/circle.png");
   background-repeat: no-repeat;
-  background-position:  120% -35%;
+  background-position:  120% 0;
 
   .info {
    background-color: #e1f1fb;
@@ -46,6 +46,13 @@ h1 {
    padding: 10px 0;
    margin-top: 10px;
 
+    .fa-sliders, .fa-trophy {
+      margin-left: 10px;
+    }
+    .goal:before {
+      font-family: $font-family;
+      content: 'g';
+    }
     h2 {
         font-weight: 500;
       }
@@ -54,6 +61,10 @@ h1 {
       margin: 0 auto;
       border-collapse: collapse;
 
+       i {
+        width: 20px;
+        margin-left: 5px;
+      }
       tbody {
           text-align: left;
         }
@@ -72,18 +83,27 @@ h1 {
     }
 
     .results {
-      margin: 0 auto;
-      width: 500px;
-        th {
-          font-weight: 500;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      .money {
+        margin: 5px 0;
+        font-size: 18px;
+      }
+      .campaign {
+        display: flex;
+        flex-direction: column;
+        width: 180px;
+
+        .description {
+          font-size: 28px;
+          margin-top: 10px;
         }
-        .tr {
-           font-weight: 600;
-          font-size: 38px;
-        }
+      }
     }
-    .description {
-      font-size: 22px;
+    .cpa {
+      text-align: left;
+      padding: 0 15px;
     }
   }
 }
@@ -125,6 +145,9 @@ h1 {
   background-repeat: no-repeat;
   background-size: 100% 100%;
 
+  .description {
+    display: none;
+  }
   .title {
       color: $black;
       font-size: 32px;
@@ -138,24 +161,32 @@ h1 {
 
     .container {
       width: 300px;
-      padding-left: 30px;
-      padding-right: 30px;
       position: relative;
-      height: 200px;
       cursor: pointer;
+      padding: 0 15px;
 
-      .content {
-        position: absolute;
-        color: $white;
-        height: 200px;
-        width: 208px;
+      .text {
         background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        font-size: 16px;
+        padding: 16px 32px;
+        height: 100%;
+      }
+
+      .middle {
+        transition: .5s ease;
         opacity: 0;
-        transition: all 0.5s ease;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        width: calc(100% - 30px);
+        height: 100%;
 
         span {
           font-weight: 700;
-          font-size: 28px;
+          font-size: 32px;
           margin-top: 60px;
           display: block;
         }
@@ -171,12 +202,21 @@ h1 {
       }
 
       img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
+        opacity: 1;
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: .5s ease;
+        backface-visibility: hidden;
+        object-fit: cover;
         }
-
       }
+    .container:hover .image {
+      opacity: 0.3;
+    }
+    .container:hover .middle {
+      opacity: 1;
+    }
   }
 
 
@@ -185,7 +225,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    margin-top: -120px;
+    margin-top: -140px;
     position: relative;
   }
 
@@ -262,9 +302,37 @@ h1 {
 }
 
 @media screen and (max-width: $screen-sm-min) {
- .slider .sliderContent {
-    width: 100%;
-    padding: 0 30px;
+ .slider {
+    height: 350px;
+   .sliderContent {
+     width: 600px;
+     .container {
+       .middle {
+         opacity: 1;
+       }
+       .text {
+         background-color: transparent;
+       }
+       .description {
+         display: block;
+         position: absolute;
+         bottom: 0;
+         background-color: rgba(0, 0, 0, 0.5);
+         color: white;
+         margin: 0;
+         padding: 10px 0;
+         width: 90%;
+         height: 40px;
+         white-space: nowrap;
+         overflow: hidden;
+         text-overflow: ellipsis;
+       }
+     }
+   }
+     img {
+       height: 250px !important;
+     }
+
  }
 
   .infoPerson .container {
@@ -274,9 +342,19 @@ h1 {
   .infoPerson .container .containerRight .info {
     margin-top: 0;
   }
-
+  .infoPerson .container .containerRight {
+    margin-left: 0;
+  }
   .infoPerson .container .containerRight .info span {
     margin-left: 10px;
   }
 }
 
+@media screen and (max-width: 700px) {
+  .slider {
+    .sliderContent {
+      width: 300px;
+    }
+
+  }
+}
