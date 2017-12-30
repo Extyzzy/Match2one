@@ -2,15 +2,17 @@ extends ../base
 block title
     | match2one
 block main
-        h1(class='container') Custom Succes Story
+        .container(class='h1')
+            h1 Custom Succes Story
         section
          .container(class='LeadingMedia')
             .img
                 img(class='humans' src=require("./img/humans.png") alt='')
             .content
                 .top
-                   img(class='logo' src=require("./img/404_logo.png") alt='')
-                   p Leading media agency, Croatia
+                  .image
+                    img(class='logo' src=require("./img/404_logo.png") alt='')
+                  p Leading media agency, Croatia
 
                 p(class='paragraph') “It’s extremely easy to run campaigns, and less time-consuming than other solutions. You can set up and launch a new campaign in a few minutes, that would take hours witth another platform. The reporting and analytics is very transparent, and easy to pass on to clients.”
                 .bottom
@@ -53,7 +55,8 @@ block main
                 img(class='humans' src=require("./img/store.png") alt='')
             .content
                 .top
-                    img(class='logo' src=require("./img/logosport.png") alt='')
+                    .image
+                        img(class='logo' src=require("./img/logosport.png") alt='')
                     p Ecommerce motorcycle retail, UK & global
 
                 p(class='paragraph') “We normally pay $5,000 for what Match2One delivered with $450 - Amazing!” “The savings we get compared to using an external company are massive and the system is easy to use. The system works on a commission % with no signup fees, and the way we saw it is we had nothing to lose. If it worked then great, if it didn’t then we weren’t tied in to any management fee or overpriced campaign that we were going to be invoiced for. We could see all the stats, what it was costing, where it was being placed, etc. Full transparency.”
