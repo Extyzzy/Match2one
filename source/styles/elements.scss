@@ -5,7 +5,7 @@ body {
 
 .buttonRose {
   color: $white;
-  padding: 10px 15px;
+  padding: 13px 25px;
   background-color: $rose;
   border: none;
   text-align: center;
@@ -35,13 +35,13 @@ body {
     font-family: $font-family;
     content: "e";
     font-size: 12px;
-    padding-left: 10px;
+    padding-left: 20px;
     transition: 0.25s;
   }
 }
 
 .buttonRose:hover::after {
-  padding-left: 20px;
+  padding-left: 30px;
 }
 
 
@@ -54,12 +54,13 @@ body {
 .percent {
   color: $green;
   font-size: 50px;
-  width: 180px;
+  width: 150px;
 }
 
 .percentParagraph {
   color: $black;
   font-size: 22px;
+  margin: 5px 0;
 }
 
 .container {

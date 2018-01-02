@@ -21,7 +21,7 @@ h1{
 
 .h1 {
   padding: 0;
-  text-align: center;
+  text-align: left;
 }
 
 .LeadingMedia {
@@ -37,8 +37,8 @@ h1{
   }
 
   .img {
-     width: 400px;
-     height: 400px;
+     width: 300px;
+     height: 300px;
         img {
             width: 100%;
             height: 100%;
@@ -62,16 +62,16 @@ h1{
 
         p {
           margin-left: 50px;
-          font-size: 18px;
+          font-size: 28px;
+          font-family: $font-family-Arvo;
         }
 
         .image {
-          width: 100%;
-          height: 100px;
+          max-width: 10%;
+          height: 100%;
           img {
             width: 100%;
             height: 100%;
-            object-fit: cover;
           }
         }
       }
@@ -98,8 +98,10 @@ h1{
   }
 
   .img {
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
+    margin-top: 30px;
+
     img {
       height: 100%;
       width: 100%;
@@ -122,13 +124,13 @@ h1{
       h2 {
         text-transform: uppercase;
         font-size: 40px;
-        width: 200px;
+        width: 150px;
       }
 
       span {
         padding-top: 50px;
-        margin-left: 50px;
         font-size: 18px;
+        font-family: $font-family-Arvo;
       }
         img {
           width: 100px;
@@ -148,6 +150,9 @@ h1{
 }
 
 @media screen and (max-width: $screen-lg-min) {
+  .h1 {
+    text-align: center;
+  }
   .LeadingMedia {
     .img {
       padding: 0 15px;
@@ -163,6 +168,7 @@ h1{
 }
 
 @media screen and (max-width: $screen-sm-min) {
+
   p {
     padding: 0 !important;
   }
@@ -189,8 +195,11 @@ h1{
        margin-top: 30px;
        width: 100%;
        padding: 0 15px;
+       .top {
+         p {
+           font-size: 20px;
+         }
+       }
      }
   }
 }
-
-

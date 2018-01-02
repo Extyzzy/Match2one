@@ -12,7 +12,7 @@
 }
 
 h1 {
-  font-size: 52px;
+  font-size: 52px !important;
   font-weight: 500;
 }
 
@@ -20,8 +20,8 @@ h1 {
   position: relative;
 
   span {
-    font-weight: 700;
     font-size: 25px;
+    font-family: $font-family-Arvo;
   }
   .logo {
     position: absolute;
@@ -55,6 +55,7 @@ h1 {
     }
     h2 {
         font-weight: 500;
+        font-family: $font-family-Arvo;
       }
 
     .settings {
@@ -151,7 +152,8 @@ h1 {
   .title {
       color: $black;
       font-size: 32px;
-      font-weight: 580;
+      font-weight: 400;
+      font-family: $font-family-Arvo;
   }
 
   .sliderContent {
@@ -185,10 +187,10 @@ h1 {
         height: 100%;
 
         span {
-          font-weight: 700;
           font-size: 32px;
           margin-top: 60px;
           display: block;
+          font-family: $font-family-Arvo;
         }
          p {
            color: $white;

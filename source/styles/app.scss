@@ -2,3 +2,27 @@
 @import url('https://file.myfontastic.com/TRWKbbxUNuS37tMR5vVh66/icons.css');
 @import "./variables";
 @import "./elements";
+
+@font-face {
+  font-family: Arvo;
+  src: url('/source/fonts/Arvo.eot');
+  src: url('/source/fonts/Arvo.eot?#iefix') format('embedded-opentype'),
+  url('/source/fonts/Arvo.woff') format('woff'),
+  url('/source/fonts/Arvo.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: ProximaBold;
+  src: url('/source/fonts/ProximaNova-Bold.eot');
+  src: url('/source/fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+  url('/source/fonts/ProximaNova-Bold.woff') format('woff'),
+  url('/source/fonts/ProximaNova-Bold.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: ProximaRegular;
+  src: url('/source/fonts/ProximaNova-Regular.eot');
+  src: url('/source/fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+  url('/source/fonts/ProximaNova-Regular.woff') format('woff'),
+  url('/source/fonts/ProximaNova-Regular.ttf')  format('truetype');
+}
